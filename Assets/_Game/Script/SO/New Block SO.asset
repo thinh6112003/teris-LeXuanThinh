@@ -1,0 +1,365 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99b186d8c0ed63428d67dedae7bfec2, type: 3}
+  m_Name: New Block SO
+  m_EditorClassIdentifier: 
+  listBlockSO:
+  - listBlockItemOfType:
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 859213104070520305, guid: 3bd722063d4335547b4a9b1d1e52f98d, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 0
+      - x: -1
+        y: -1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 2833012594808453364, guid: bf0e715a03b03c84eb1dcff9534b719d, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 1
+    - upperPoint: 1
+      lowerPoint: 0
+      block: {fileID: 2706653612909689172, guid: ebc3bb7e5cb063a478b36656a1a6aa98, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: 1
+        y: 0
+      - x: 1
+        y: 1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 8272619949635438412, guid: 98ef8ddfe2b18d844906e74671d25887, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: 0
+      - x: 0
+        y: -1
+      - x: 1
+        y: -1
+      - x: -1
+        y: 0
+    blockUnit: {fileID: 3163969090706869272, guid: 5321031c9efce6f4bb42a22a8ba1105f, type: 3}
+  - listBlockItemOfType:
+    - upperPoint: 0
+      lowerPoint: 0
+      block: {fileID: 6988734958119909370, guid: 405ec089776443545b416256b25aa6f8, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: 0
+        y: 2
+    - upperPoint: 2
+      lowerPoint: -1
+      block: {fileID: 1022458542915755363, guid: 622814b4cf21cb7498d9e44dab8182d3, type: 3}
+      listBlockUnit:
+      - x: -1
+        y: 0
+      - x: 0
+        y: 0
+      - x: 1
+        y: 0
+      - x: 2
+        y: 0
+    - upperPoint: 0
+      lowerPoint: 0
+      block: {fileID: 776778913810857521, guid: 4fec27c66728129458e70cf62034586d, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: -2
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+    - upperPoint: 1
+      lowerPoint: -2
+      block: {fileID: 3804293127611534329, guid: 7fcea4115d5349544a994f667913e571, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: -1
+        y: 0
+      - x: -2
+        y: 0
+    blockUnit: {fileID: 3163969090706869272, guid: 98b8d4aeee35bc34899dcd1e14d97fef, type: 3}
+  - listBlockItemOfType:
+    - upperPoint: 1
+      lowerPoint: 0
+      block: {fileID: 1743006160169969351, guid: 1878b74d1f4b4b447a4a1d758b80056e, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 1
+      - x: 0
+        y: 1
+      - x: 0
+        y: 0
+      - x: 0
+        y: -1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 7814569683853740794, guid: 78451bb832adfd643886ebe86761fffe, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: -1
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: -1
+        y: 0
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 5419536503106002329, guid: 0d60f205b03189648ab5f52b3e8f9169, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: -1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 627784324770138283, guid: 6b9766b817a4f3a41a3655870ac77611, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: -1
+        y: 0
+      - x: -1
+        y: 1
+    blockUnit: {fileID: 1020744039233966676, guid: 1b2324d4d7689d44893a7f0825b9f205, type: 3}
+  - listBlockItemOfType:
+    - upperPoint: 1
+      lowerPoint: 0
+      block: {fileID: 3734080559057043836, guid: 1eb2fbe30d8fa1d4091e2d6eb4b8fa67, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: -1
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 8750956440451883534, guid: 7e6ff973781eb944b856ca7a4e7c0afa, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: -1
+        y: 0
+      - x: -1
+        y: -1
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 8983890542228545101, guid: 60956e203e3f23c46831611a269b57bf, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 6828318203687644404, guid: 31c46f01dda970a44b629b296031e94a, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 1
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: -1
+        y: 0
+    blockUnit: {fileID: 4066176312091839818, guid: 70dc0d98af51013489d4311abe782446, type: 3}
+  - listBlockItemOfType:
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 7242083712432294520, guid: dee157551c757e84aba01fef7f3013d7, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: -1
+        y: 0
+      - x: -1
+        y: 1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 6347016933176523680, guid: 59da075d3d9e21b4cb0b4641e5f85ab8, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 1
+      - x: 0
+        y: 1
+      - x: 0
+        y: 0
+      - x: -1
+        y: 0
+    - upperPoint: 1
+      lowerPoint: 0
+      block: {fileID: 538761219919045966, guid: eae5c86a056a0224eadf6f5954741647, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: -1
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 7476240411029292220, guid: 3a0bca6f2f03b3745878f350966b5381, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: 0
+        y: -1
+      - x: -1
+        y: -1
+    blockUnit: {fileID: 2013305445375805741, guid: e3d44c6b261b71143a7315ebec1e4e7c, type: 3}
+  - listBlockItemOfType:
+    - upperPoint: 1
+      lowerPoint: 0
+      block: {fileID: 7633527544767866285, guid: d5a1799ba714ea941bebbc6e2c5ebcc7, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 0
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 1784087197636674846, guid: 8afd7c48f27ec644f828aced0f783313, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 0
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: -1
+        y: 0
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 8719145997438309278, guid: 393cd9912fb49e347bee5aa6f94677ba, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: -1
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 0
+    - upperPoint: 1
+      lowerPoint: -1
+      block: {fileID: 8744791046756985931, guid: 4a6447faa6f23a34a9c88effec4bf61c, type: 3}
+      listBlockUnit:
+      - x: 1
+        y: 0
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 0
+    blockUnit: {fileID: 9105739352347675945, guid: 2cc9258d023d3744685ff35e7c78bc4b, type: 3}
+  - listBlockItemOfType:
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 3533443284440030311, guid: 2ca27abc78470ba4ea838a0be4558802, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 0
+      - x: -1
+        y: 1
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 1441571985684394982, guid: f3785b1e7cf584346a228ca114f585b6, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 0
+      - x: -1
+        y: 1
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 1318704342105533449, guid: ed4c13d03aab5024baab7e01fd0e7a3c, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 0
+      - x: -1
+        y: 1
+    - upperPoint: 0
+      lowerPoint: -1
+      block: {fileID: 8534870159372202575, guid: b7d43a74ee8f6324d92917459966ecef, type: 3}
+      listBlockUnit:
+      - x: 0
+        y: 0
+      - x: 0
+        y: 1
+      - x: -1
+        y: 0
+      - x: -1
+        y: 1
+    blockUnit: {fileID: 1029837498324471795, guid: c16965676e1fe7d42bcfd594706c3c2b, type: 3}
