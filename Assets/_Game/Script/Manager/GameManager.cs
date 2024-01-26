@@ -45,6 +45,7 @@ public class GameManager : Singleton<GameManager>
             Screen.SetResolution(Mathf.RoundToInt(ratio * (float)maxScreenHeight), maxScreenHeight, true);
         }
         Init();
+        UIManager.Instance.UpdateScore();
         ChangeState(new FloodFillState());
     }
     private void Update()
