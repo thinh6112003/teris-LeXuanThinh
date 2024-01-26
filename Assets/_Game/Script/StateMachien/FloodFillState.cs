@@ -16,6 +16,7 @@ public class FloodFillState : IState
         gM.maxEatItem = 0;
         gM.bestSolutionType = 0;
         gM.fillvalue = 1;
+        gM.UpdateNextBlock();
         for (int i = 0; i < 17; i++)
         {
             for (int j = 0; j < 7; j++)

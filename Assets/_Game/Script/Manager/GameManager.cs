@@ -8,18 +8,22 @@ public class GameManager : Singleton<GameManager>
     public List<PointXY> listSolution;
     public List<bool[,]> visited ;
     public List<int>[,] matrixSolution;
+    public List<GameObject>[] listNextUnitBlock = new List<GameObject>[3];
     public GameObject block;
     public GameObject block2;
+    public GameObject nextBlock1Parent;
+    public GameObject nextBlock2Parent;
+    public GameObject nextBlock3Parent;
     public PointXY startPoint= new PointXY();
     public BlockType currentBlock;
     public BlockType nextBlock1;
     public BlockType nextBlock2;
     public BlockType nextBlock3;
     public BlockSO blockSO;
-    public TextMeshProUGUI score;
-    public TextMeshProUGUI highScore;
     public IState currentState;
     public float fillvalue = 1;
+    public int score=0;
+    public int highScore=0;
     public int rows, cols;
     public int maxEatItem = 0;
     public int bestSolution = 0;
@@ -52,6 +56,7 @@ public class GameManager : Singleton<GameManager>
     }
     public void Init()
     {
+        score = 0;
         startPoint.x = 16;
         startPoint.y = 3;
         rows = 7;
@@ -236,6 +241,42 @@ public class GameManager : Singleton<GameManager>
         if (currentState != null)
         {
             currentState.OnEnter(this);
+        }
+    }
+    public void UpdateNextBlock()
+    {
+        BlockItemOfType blockItemOfType1 = blockSO.listBlockSO[(int)nextBlock1].listBlockItemOfType[0];
+        GameObject block1 = blockSO.listBlockSO[(int)nextBlock1].blockUnit;
+        for (int i = 0; i < 3; i++)
+        {
+            if (listNextUnitBlock[i] == null) listNextUnitBlock[i] = new List<GameObject>();
+            while (listNextUnitBlock[i].Count > 0)
+            {
+                Destroy(listNextUnitBlock[i][0]);
+                listNextUnitBlock[i].RemoveAt(0);
+            }
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            GameObject t = Instantiate(block1, nextBlock1Parent.transform);
+            t.transform.localPosition = new Vector2(blockItemOfType1.listBlockUnit[i].x, blockItemOfType1.listBlockUnit[i].y);
+            listNextUnitBlock[0].Add(t);
+        }
+        BlockItemOfType blockItemOfType2 = blockSO.listBlockSO[(int)nextBlock2].listBlockItemOfType[0];
+        GameObject block2 = blockSO.listBlockSO[(int)nextBlock2].blockUnit;
+        for (int i = 0; i < 4; i++)
+        {
+            GameObject t = Instantiate(block2, nextBlock2Parent.transform);
+            t.transform.localPosition = new Vector2(blockItemOfType2.listBlockUnit[i].x, blockItemOfType2.listBlockUnit[i].y);
+            listNextUnitBlock[1].Add(t);
+        }
+        BlockItemOfType blockItemOfType3 = blockSO.listBlockSO[(int)nextBlock3].listBlockItemOfType[0];
+        GameObject block3 = blockSO.listBlockSO[(int)nextBlock3].blockUnit;
+        for (int i = 0; i < 4; i++)
+        {
+            GameObject t = Instantiate(block3, nextBlock3Parent.transform);
+            t.transform.localPosition = new Vector2(blockItemOfType3.listBlockUnit[i].x, blockItemOfType3.listBlockUnit[i].y);
+            listNextUnitBlock[2].Add(t);
         }
     }
 }

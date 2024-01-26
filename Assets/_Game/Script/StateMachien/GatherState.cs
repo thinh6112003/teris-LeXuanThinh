@@ -16,6 +16,8 @@ public class GatherState : IState
         }
         else
         {
+            gM.score += rowsEat.Count * 20;
+            UIManager.Instance.UpdateScore();
             int j = 0,dem=0;
             for(int i = rowsEat[0]; i < 17; i++)
             {
@@ -62,7 +64,7 @@ public class GatherState : IState
             {
                 checkComplete = false;
                 listBlockMove[i].transform.position = Vector2.MoveTowards(listBlockMove[i].transform.position,
-                    listBlockMove[i].exactPos, 0.05f);
+                    listBlockMove[i].exactPos, 5f* Time.deltaTime);
             }
         }
         if (checkComplete) gM.ChangeState(new FloodFillState());
